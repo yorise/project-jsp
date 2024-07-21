@@ -1,0 +1,526 @@
+/* hero section start */
+
+section.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0 7rem;
+  color: var(--DarkGreen);
+}
+
+section.hero .content {
+  width: 50%;
+}
+
+section.hero .content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+section.hero .content p {
+  font-size: 1.5rem;
+  line-height: 2.2;
+  margin: 2rem 0 3rem;
+  width: 85%;
+}
+
+section.hero .content .tombol {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.hero .content .tombol a {
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1.5rem 0;
+}
+
+section.hero .content .tombol a:nth-child(1) {
+  background-image: linear-gradient(
+    to right,
+    var(--DarkGreen),
+    var(--PastelGreen)
+  );
+  color: white;
+  margin-right: 2rem;
+}
+
+section.hero .content .tombol a:nth-child(2) {
+  border: 2px solid var(--PastelGreen);
+  color: var(--DarkGreen);
+}
+
+/* hero section end */
+
+/* visi misi section start */
+
+/* info */
+
+section.visi-misi .info {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--DarkGreen);
+  padding: 3.5rem;
+  color: white;
+}
+
+section.visi-misi .info .line {
+  height: 5.4rem;
+  width: 2px;
+  background-color: white;
+  margin: 0 3rem;
+}
+
+section.visi-misi .info .status {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+section.visi-misi .info .status p {
+  font-weight: 600;
+  font-size: 5.4rem;
+}
+
+section.visi-misi .info .status span {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+/* info */
+
+section.visi-misi div.visi-misi {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin: 4rem 7rem;
+}
+
+section.visi-misi div.visi-misi .content {
+  text-align: justify;
+  width: 80%;
+  color: var(--DarkGreen);
+}
+
+section.visi-misi div.visi-misi .content h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+section.visi-misi div.visi-misi .content p {
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+section.visi-misi div.visi-misi .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+}
+
+section.visi-misi div.visi-misi .box div {
+  width: 17rem;
+  height: 10.5rem;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+section.visi-misi div.visi-misi .box div span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+section.visi-misi div.visi-misi .box div p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+section.visi-misi div.visi-misi .box div.kualitas,
+section.visi-misi div.visi-misi .box div.kepuasan {
+  background-color: var(--IvoryYellow);
+  color: var(--DarkGreen);
+}
+
+section.visi-misi div.visi-misi .box div.pengembangan,
+section.visi-misi div.visi-misi .box div.keberlanjutan {
+  background-color: var(--PastelGreen);
+  color: white;
+}
+
+/* visi misi section end */
+
+/* kelebihan section start */
+
+section.value {
+  position: relative; /* relative dengan card panggil dan section penjelasan (jadi sebisa mungkin tidak berbeda jauh) */
+  overflow-x: hidden;
+}
+
+section.value h1 {
+  color: var(--accent, #0a6646);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 119.048% */
+  letter-spacing: 0.21px;
+}
+
+section.value .slider {
+  position: absolute;
+}
+
+section.value .list {
+  display: flex;
+  width: calc(440px * 14);
+  gap: 2rem;
+  margin: 3rem 0;
+  perspective: 500px;
+  animation: scroll 15s linear infinite;
+}
+
+section.value .list:hover {
+  animation-play-state: paused;
+}
+
+section.value .list div {
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 480px;
+  height: 251px;
+  border-radius: 1rem;
+  transition: transform 0.5s;
+}
+
+section.value .list div:hover {
+  transform: translateY(-20px);
+}
+
+/* infinite scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-440px * 7));
+  }
+}
+
+/* infinite scroll */
+
+/* konten value perusahaan */
+
+section.value .slider .list div img {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+section.value .slider .list div span {
+  display: block;
+  color: white;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 156.25% */
+  letter-spacing: 0.16px;
+}
+
+section.value .slider .list div p {
+  color: var(--A4---1, #fff);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.1px;
+}
+
+/* background box */
+
+section.value .slider .list div.integritas {
+  background-color: #05bfea;
+}
+
+section.value .slider .list div.profesionalisme {
+  background-color: #7eba78;
+}
+
+section.value .slider .list div.inovasi {
+  background-color: #d37f99;
+}
+
+section.value .slider .list div.komitmen {
+  background-color: #ffcb32;
+}
+
+section.value .slider .list div.kerja-tim {
+  background-color: #f3a936;
+}
+
+section.value .slider .list div.pengembangan {
+  background-color: #ff8841;
+}
+
+/* background box */
+
+/* konten value perusahaan */
+
+/* kelebihan section end */
+
+/* call action start */
+
+section.value .panggil {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 11rem; /* relative dengan card panggil dan section penjelasan (jadi sebisa mungkin tidak berbeda jauh) */
+  height: 40rem;
+  width: 100%;
+  flex-shrink: 0;
+  background: var(
+    --Gradien-Green,
+    linear-gradient(93deg, #0a6646 -15.17%, rgba(20, 204, 140, 0.8) 119.46%)
+  );
+  z-index: -1;
+}
+
+section.value .panggil img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 45%; /* widht samakan dengan image yang di background */
+  opacity: 0.4;
+  background-color: rgba(255, 221, 62, 0.5);
+  border-radius: 0 5rem 5rem 0;
+}
+
+section.value .panggil .register {
+  width: 45%; /* widht samakan dengan image yang di background */
+  text-align: center;
+  z-index: 1;
+}
+
+section.value .panggil .register h2 {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 50px; /* 119.048% */
+  margin-bottom: 5rem;
+}
+
+section.value .panggil .register h2 span {
+  color: var(--GoldenYellow);
+}
+
+section.value .panggil .register a {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #ffe43e 0%, #ffbc41 100%);
+  padding: 1rem 6rem;
+  border-radius: 0.5rem;
+}
+
+section.value .panggil .layanan {
+  width: 45%;
+  color: white;
+}
+
+section.value .panggil .layanan h3 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.3; /* 119.048% */
+  letter-spacing: 0.21px;
+}
+
+section.value .panggil .layanan ul {
+  list-style-type: disc;
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+/* call action end */
+
+/* penjelasan section start */
+
+section.penjelasan {
+  display: flex;
+  padding: 4rem;
+  color: var(--VeryDarkBlack);
+}
+
+section.penjelasan .content {
+  padding: 0 4rem;
+}
+
+section.penjelasan .content h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 4; /* 119.048% */
+  letter-spacing: 0.21px;
+}
+section.penjelasan .content h1 span {
+  color: var(--DarkGreen);
+}
+
+section.penjelasan .content p {
+  text-align: justify;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.13px;
+}
+
+/* penjelasan section end */
+
+/* alamat section start */
+
+section.alamat {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem;
+  gap: 2rem;
+  background: var(
+    --Gradien-Green,
+    linear-gradient(93deg, #0a6646 -15.17%, rgba(20, 204, 140, 0.8) 119.46%)
+  );
+  color: white;
+}
+
+section.alamat .detail {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.alamat .detail div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+section.alamat .detail div img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: var(--PastelGreen);
+  padding: 0.7rem;
+  box-sizing: border-box;
+}
+
+section.alamat .detail div .info {
+  display: block;
+  width: 60%;
+}
+
+section.alamat .detail div .info span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.15px;
+}
+
+section.alamat .detail div .info p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 50px; /* 192.308% */
+  letter-spacing: 0.13px;
+}
+
+/* alamat section end */
+
+/* testimoni section start */
+
+section.testimoni {
+  height: 60vh;
+  padding: 5rem 0;
+  color: var(--VeryDarkBlack);
+}
+
+section.testimoni p:nth-child(1) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 50px; /* 192.308% */
+  letter-spacing: 0.13px;
+}
+
+section.testimoni span {
+  position: relative;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 50px; /* 119.048% */
+  letter-spacing: 0.21px;
+}
+
+section.testimoni span::before {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 95%;
+  height: 60%;
+  background-color: #dff556;
+  transform: translate(-50%, -50%) scale(1.1);
+  z-index: -1; /* Menempatkan pseudo-elemen di belakang konten */
+}
+
+/* review testimoni */
+
+section.testimoni .content {
+  position: relative;
+  display: flex;
+  gap: 7rem;
+  margin: 3rem auto;
+  background-color: var(--PastelGreen);
+  width: 60%;
+  padding: 3rem 5rem;
+  color: white;
+}
+
+section.testimoni .content img.kutip {
+  position: absolute;
+  top: -9%;
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+section.testimoni .content p.review {
+  text-align: justify;
+  width: 65%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.1px;
+}
+section.testimoni .content .profile p {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2;
+}
+
+section.testimoni .content .profile p:nth-child(2) {
+  font-weight: 600;
+}
+
+/* review testimoni */
+
+/* testimoni section end */

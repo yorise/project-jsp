@@ -1,0 +1,308 @@
+main {
+  position: relative;
+}
+
+/* section posisi start  */
+
+section.posisi {
+  display: flex;
+  align-items: center;
+  margin: 10rem 7rem;
+  justify-content: space-between;
+}
+
+section.posisi .link {
+  background-color: rgba(235, 250, 228, 1);
+  width: 70%;
+  padding: 1.5rem;
+}
+
+section.posisi .link a {
+  color: #a8a7a7;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.1px;
+}
+
+/* section posisi end  */
+
+/* section form start */
+
+section.form {
+  margin: 2rem 7rem;
+  background-color: rgba(243, 251, 242, 1);
+  padding: 1.5rem 0;
+}
+
+section.form h1 {
+  text-align: center;
+  color: var(--DarkGreen);
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 1.3; /* 75% */
+  letter-spacing: 0.2px;
+}
+
+section.form h1 span {
+  color: #22a879;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+}
+
+section.form .step {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+section.form .step div.step-1,
+section.form .step div.step-2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section.form .step div.step-1 span.nomor {
+  color: var(--DarkGreen);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 50px; /* 100% */
+  letter-spacing: 0.25px;
+  text-transform: capitalize;
+  padding: 2rem 3rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid var(--DarkGreen);
+}
+
+section.form .step div.step-2 span.nomor {
+  color: #eaf3e9;
+  background-color: var(--PastelGreen);
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 100% */
+  letter-spacing: 0.25px;
+  text-transform: capitalize;
+  padding: 2rem 2.7rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+section.form .step div.step-1 .detail span,
+section.form .step div.step-2 .detail span {
+  color: var(--DarkGreen);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+}
+
+section.form .step div.step-1 .detail p,
+section.form .step div.step-2 .detail p {
+  color: var(--DarkGreen);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.08px;
+  text-transform: capitalize;
+  width: 90%;
+}
+
+section.form .form {
+  margin: 7rem 0;
+}
+
+section.form .form h2 {
+  color: var(--DarkGreen);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 30px; /* 93.75% */
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+  margin-bottom: 3.5rem;
+}
+
+section.form .form h2::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Sesuaikan untuk mengatur posisi awal dari garis */
+  transform: translateX(-50%);
+  bottom: -50px; /* Sesuaikan jarak antara tulisan dan garis bawah */
+  width: 25%; /* Sesuaikan panjang garis */
+  border-bottom: 1px solid var(--PastelGreen);
+}
+
+section.form .form .hasil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto 4rem;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  background: #e3eae4;
+  width: 60%;
+}
+
+section.form .form .hasil p {
+  color: #57d38b;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+}
+
+/* form start */
+
+section.form .form form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+
+section.form .form form label {
+  color: var(--DarkGreen);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+section.form .form form input {
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+section.form .form form .radio-button label {
+  color: #7b8883;
+  font-size: 1.1rem;
+}
+
+section.form form .radio-button {
+  display: flex;
+  flex-direction: column;
+}
+
+section.form .form form .tombol {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+section.form .form form .tombol button {
+  width: 50%;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+section.form .form form .tombol button:nth-child(1) {
+  color: var(--DarkGreen);
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 1px solid var(--Gradien-Green, #0a6646);
+  border-radius: 0.5rem;
+  background-color: rgba(243, 251, 242, 1);
+}
+
+section.form .form form .tombol button:nth-child(2) {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background: var(
+    --Gradien-Green,
+    linear-gradient(93deg, #0a6646 -15.17%, rgba(20, 204, 140, 0.8) 119.46%)
+  );
+}
+
+/* form end */
+
+/* section form end */
+
+/* section pop up start */
+
+section.pop-up {
+  position: fixed;
+  display: none;
+  z-index: 100;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.359);
+}
+
+section.pop-up .pop-up {
+  text-align: center;
+  margin: auto;
+  padding: 4rem;
+  box-sizing: border-box;
+  width: 40%;
+  height: 60%;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #e3eae4;
+  box-shadow: 0px 259px 73px 0px rgba(0, 0, 0, 0),
+    0px 166px 66px 0px rgba(0, 0, 0, 0.01),
+    0px 93px 56px 0px rgba(0, 0, 0, 0.05), 0px 41px 41px 0px rgba(0, 0, 0, 0.09),
+    0px 10px 23px 0px rgba(0, 0, 0, 0.1);
+}
+
+section.pop-up .pop-up img {
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid #7eba78;
+  border-radius: 50%;
+}
+
+section.pop-up .pop-up h1 {
+  color: #57d38b;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 133.333% */
+  letter-spacing: 0.15px;
+  text-transform: capitalize;
+}
+
+section.pop-up .pop-up p {
+  color: #57d38b;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 120% */
+  letter-spacing: 0.125px;
+  margin: 1.5rem 0;
+}
+
+section.pop-up .pop-up button {
+  color: var(--DarkGreen);
+  font-size: 1.2rem;
+  padding: 0.8rem 7rem;
+  border-radius: 10px;
+  border: 1px solid var(--Gradien-Green, #0a6646);
+}
+
+/* section pop up end */
